@@ -1,5 +1,6 @@
 import { vars } from "nativewind";
 import { Pressable, Text, View } from "react-native";
+import { Image } from "expo-image";
 
 const theme = vars({
   "--theme-fg": "red",
@@ -15,6 +16,18 @@ const App = () => {
       <Text className="font-bold animate-bounce placeholder:text-white">
         Animations
       </Text>
+      <Image source={require("../../assets/Instagram.png")} />
+      <Image
+        source={require("../../assets/Instagram.png")}
+        className="h-5 w-5"
+      />
+      <Image
+        source={require("../../assets/Instagram.png")}
+        style={{
+          height: 20,
+          width: 20,
+        }}
+      />
     </View>
   );
 };
